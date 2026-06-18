@@ -1,0 +1,284 @@
+.section {
+  background-color: #ffffff;
+  padding: 8rem 2rem;
+  font-family: var(--font-geist-sans), sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Left Side */
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #ffefe8;
+  color: #f2725c;
+  padding: 0.4rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 4rem;
+  max-width: 650px;
+}
+
+/* Review Section */
+.reviewSection {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.avatarGroup {
+  display: flex;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: -10px;
+  object-fit: cover;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.starsAndText {
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  display: flex;
+  gap: 0.2rem;
+  color: #f59e0b; /* Golden star color */
+}
+
+.starSvg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.reviewText {
+  font-size: 0.75rem;
+  color: #888888;
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+
+/* Formula Banner */
+.formulaBanner {
+  background: linear-gradient(135deg, #f2725c 0%, #d63d48 100%);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #ffffff;
+}
+
+.formulaBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formulaIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.formulaText {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaLabel {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.formulaValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.operator {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.multiplier {
+  background: #ffffff;
+  color: #e84e36;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+/* Right Side Card */
+.reportCard {
+  background: linear-gradient(135deg, #f2725c 0%, #d63d48 100%);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(214, 61, 72, 0.2);
+  height: 100%;
+}
+
+.cardIconWrapper {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.cardDesc {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.90rem;
+  font-weight: 200;
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+.checkIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.generateBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.generateBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.dot {
+  font-size: 1.4rem;
+  line-height: 0;
+  position: relative;
+  top: -1px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .reportCard {
+    max-width: 500px;
+  }
+  .formulaBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .operator {
+    display: none; /* Simplify banner on small screens or keep and adjust */
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
