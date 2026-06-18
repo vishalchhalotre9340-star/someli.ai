@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./navbar.module.css";
 
 const NAV_ITEMS = [
@@ -37,16 +38,8 @@ const NAV_ITEMS = [
 
 function SomeliLogo() {
   return (
-    <Link href="/" className={styles.logo}>
-      <svg viewBox="0 0 32 32" fill="none" className={styles.logoIcon}>
-        <circle cx="16" cy="16" r="16" fill="#F97316" opacity="0.12" />
-        <path d="M9 16C9 12.134 12.134 9 16 9s7 3.134 7 7-3.134 7-7 7"
-          stroke="#F97316" strokeWidth="2.5" strokeLinecap="round" />
-        <circle cx="16" cy="16" r="2.5" fill="#F97316" />
-      </svg>
-      <span className={styles.logoText}>
-        someli<span className={styles.logoDot}>.</span>ai
-      </span>
+    <Link href="/">
+      <Image src="/assets/logo.png" alt="someli.ai logo" width={160} height={40} style={{ objectFit: "contain" }} />
     </Link>
   );
 }
