@@ -1,0 +1,249 @@
+.section {
+  position: relative;
+  padding: 100px 5%;
+  background-color: #ffffff;
+  background-size: 60px 60px;
+  background-image:
+    linear-gradient(to right, rgba(240, 116, 95, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(240, 116, 95, 0.05) 1px, transparent 1px);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #feece9;
+  color: #f0745f;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-color: #dcdcdc;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.cardSubtitle {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+  color: #f0745f;
+}
+
+/* Right Content - Form Card */
+.rightContent {
+  flex: 1.1;
+}
+
+.formCard {
+  background: linear-gradient(135deg, #e48259 0%, #ce384e 100%);
+  border-radius: 20px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  box-shadow: 0 20px 50px rgba(206, 56, 78, 0.2);
+}
+
+.formHeading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.formSubtitle {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input:focus {
+  border-color: #ffffff;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.countryCode {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.flag {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.chevron {
+  width: 16px;
+  height: 16px;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.submitBtn {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submitBtn .dot {
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  .inputRow {
+    flex-direction: column;
+  }
+}
