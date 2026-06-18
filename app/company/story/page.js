@@ -1,13 +1,13 @@
 import Navbar from "../../../components/Navbar/navbar";
 import Footer from "../../../components/Footer/footer";
-import Misson from "../../../components/Company/misson";
-import OurStory from "../../../components/Company/ourstory";
-import OurJourney from "../../../components/Company/ourjourney";
-import OurTeam from "../../../components/Company/ourteam";
-import BusinessGrow from "../../../components/Company/buisnessgrow";
-import OurPartner from "../../../components/Company/ourpartner";
-import OurCertification from "../../../components/Company/ourcertification";
-import WhatWeDo from "../../../components/Company/whatwedo";
+import Misson from "../../../components/Company/OurStory/misson";
+import OurStory from "../../../components/Company/OurStory/ourstory";
+import OurJourney from "../../../components/Company/OurStory/ourjourney";
+import OurTeam from "../../../components/Company/OurStory/ourteam";
+import BusinessGrow from "../../../components/Company/OurStory/buisnessgrow";
+import OurPartner from "../../../components/Company/OurStory/ourpartner";
+import OurCertification from "../../../components/Company/OurStory/ourcertification";
+import WhatWeDo from "../../../components/Company/OurStory/whatwedo";
 
 export default function StoryPage() {
   return (
