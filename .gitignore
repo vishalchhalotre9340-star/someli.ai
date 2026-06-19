@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+/public/devolopment/20260618-0952-35.6112881.mp4
 
 # debug
 npm-debug.log*

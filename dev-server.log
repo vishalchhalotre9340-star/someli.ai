@@ -1,0 +1,41 @@
+
+> someli.ai@0.1.0 dev
+> next dev -H 0.0.0.0
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+✓ Ready in 2.4s
+
+ GET / 200 in 2.4s (next.js: 602ms, application-code: 1778ms)
+ GET / 200 in 1195ms (next.js: 13ms, application-code: 1182ms)
+ GET / 200 in 285ms (next.js: 7ms, application-code: 278ms)
+ GET / 200 in 641ms (next.js: 9ms, application-code: 632ms)
+ GET / 200 in 368ms (next.js: 7ms, application-code: 361ms)
+ GET / 200 in 682ms (next.js: 9ms, application-code: 673ms)
+ GET / 200 in 427ms (next.js: 10ms, application-code: 417ms)
+ GET / 200 in 275ms (next.js: 5ms, application-code: 269ms)
+ GET / 200 in 227ms (next.js: 6ms, application-code: 221ms)
+ GET / 200 in 604ms (next.js: 16ms, application-code: 587ms)
+ GET / 200 in 406ms (next.js: 16ms, application-code: 390ms)
+ GET / 200 in 530ms (next.js: 13ms, application-code: 517ms)
+ GET / 200 in 390ms (next.js: 8ms, application-code: 382ms)
+ GET / 200 in 238ms (next.js: 5ms, application-code: 233ms)
+ GET / 200 in 720ms (next.js: 35ms, application-code: 685ms)
+ GET / 200 in 399ms (next.js: 6ms, application-code: 392ms)
+ GET / 200 in 402ms (next.js: 8ms, application-code: 394ms)
+ GET / 200 in 295ms (next.js: 10ms, application-code: 285ms)
+ GET / 200 in 327ms (next.js: 7ms, application-code: 319ms)
+ GET / 200 in 642ms (next.js: 6ms, application-code: 636ms)
+ GET / 200 in 197ms (next.js: 3ms, application-code: 193ms)
+ GET / 200 in 146ms (next.js: 3ms, application-code: 142ms)
+ GET / 200 in 195ms (next.js: 8ms, application-code: 187ms)
+ GET / 200 in 220ms (next.js: 6ms, application-code: 214ms)
+ GET / 200 in 357ms (next.js: 6ms, application-code: 351ms)
+ GET / 200 in 186ms (next.js: 4ms, application-code: 182ms)
+ GET / 200 in 349ms (next.js: 9ms, application-code: 340ms)
+ GET / 200 in 251ms (next.js: 4ms, application-code: 247ms)
+ GET / 200 in 341ms (next.js: 6ms, application-code: 335ms)
+ GET / 200 in 180ms (next.js: 5ms, application-code: 175ms)
+ GET / 200 in 402ms (next.js: 5ms, application-code: 398ms)
+[?25h

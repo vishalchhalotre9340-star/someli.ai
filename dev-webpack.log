@@ -1,0 +1,13 @@
+
+> someli.ai@0.1.0 dev
+> next dev --webpack -H 0.0.0.0
+
+▲ Next.js 16.2.9 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://0.0.0.0:3000
+✓ Ready in 1820ms
+
+○ Compiling / ...
+ GET / 200 in 8.4s (next.js: 6.8s, application-code: 1604ms)
+ GET / 200 in 699ms (next.js: 26ms, application-code: 673ms)
+ GET / 200 in 800ms (next.js: 9ms, application-code: 791ms)

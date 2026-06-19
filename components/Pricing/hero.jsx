@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar/navbar';
 import styles from './hero.module.css';
 
 export default function PricingHero() {
@@ -12,8 +11,6 @@ export default function PricingHero() {
 
   return (
     <div className={styles.heroWrapper}>
-      <Navbar />
-      
       <div className={styles.mainSection}>
         {/* Grid Background */}
         <div className={styles.gridBackground}></div>
