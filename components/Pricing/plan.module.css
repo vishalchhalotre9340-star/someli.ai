@@ -1,0 +1,388 @@
+/* components/Pricing/plan.module.css */
+
+.planSection {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading Section */
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #fee2cc;
+  color: var(--orange, #f97316);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* 3 Column Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Left & Right Column Cards */
+.sideCard {
+  background: #ffffff;
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.featureItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.featureItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #fff0e6;
+  color: #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconBox svg {
+  width: 24px;
+  height: 24px;
+}
+
+.featureText h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.featureText p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Middle Pricing Card */
+.pricingCard {
+  background: linear-gradient(135deg, #e48152 0%, #d83f4f 100%);
+  border-radius: 16px;
+  padding: 40px 32px;
+  color: #ffffff;
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.pricingHeaderLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.planName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.9;
+}
+
+.planDot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.period {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.rocketIcon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.9;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex: 1;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  color: #d83f4f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.checkIcon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.ctaButton {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.ctaButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ctaButton:active {
+  transform: scale(0.98);
+}
+
+.guaranteeText {
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin-top: 16px;
+}
+
+/* Guarantee Block in Right Card */
+.guaranteeBlock {
+  background: linear-gradient(135deg, #e48152 0%, #d83f4f 100%);
+  border-radius: 12px;
+  padding: 32px 24px;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+.ribbonIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.guaranteeTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.guaranteeDesc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Logos Section */
+.logosSection {
+  margin-top: 120px;
+  text-align: center;
+  width: 100%;
+}
+
+.logosTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+.logosTrack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  opacity: 0.4;
+}
+
+.logosTrack svg {
+  height: 32px;
+  width: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .statsSection {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    padding-top: 64px;
+  }
+}
+
+/* Stats Section */
+.statsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 160px;
+  align-items: center;
+}
+
+.statsLeft {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.statCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+.statBox {
+  background: linear-gradient(to bottom, #e26038 0%, #1a1a1a 100%);
+  color: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.statsRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.statsTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.statsDesc {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+}

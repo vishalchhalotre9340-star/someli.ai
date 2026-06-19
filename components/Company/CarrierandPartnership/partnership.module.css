@@ -1,0 +1,172 @@
+.section {
+  position: relative;
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(to right, #fdf1f0 1px, transparent 1px),
+    linear-gradient(to bottom, #fdf1f0 1px, transparent 1px);
+  background-size: 60px 60px;
+  padding: 120px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #feece9;
+  color: #f2725c;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  gap: 60px;
+  align-items: center;
+  z-index: 1;
+}
+
+.regionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaeb;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: #f2725c;
+}
+
+.cardActive {
+  background: linear-gradient(135deg, #f0815a 0%, #cc363b 100%);
+  border: 1px solid transparent;
+  color: white;
+  box-shadow: 0 10px 30px rgba(204, 54, 59, 0.2);
+}
+
+.cardActive:hover {
+  border-color: transparent;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.cardActive .cardTitle {
+  color: #ffffff;
+}
+
+.priorityBadge {
+  font-size: 0.65rem;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.countryList {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.countryItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.countryDot {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.mapContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mapSvg {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+.pin {
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease;
+}
+
+.pin:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  .regionsList {
+    max-width: 100%;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}

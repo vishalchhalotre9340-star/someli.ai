@@ -1,0 +1,95 @@
+.section {
+  background-color: #111111;
+  padding: 8rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-geist-sans), sans-serif;
+  border-top: 1px solid rgba(255,255,255,0.02);
+}
+
+.badge {
+  display: inline-block;
+  background-color: #2c1a17;
+  color: #e84e36;
+  border: 1px solid #3d2420;
+  padding: 0.4rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+/* This grid container with gap creates the 1px inner borders seamlessly */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-width: 1300px;
+  background-color: rgba(255, 255, 255, 0.08); /* Border color */
+  gap: 1px; /* Border thickness */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Outer border to match image perfectly if needed, but the image shows borders going across */
+  border-left: none;
+  border-right: none;
+}
+
+.cell {
+  background-color: #111111; /* Masks the grid background to show only the gap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #161616; /* Slight highlight on hover */
+}
+
+.logo {
+  height: 32px;
+  color: #888888;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.cell:hover .logo {
+  color: #cccccc;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1100px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cell {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}
